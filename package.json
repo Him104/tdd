@@ -1,0 +1,27 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "description": "incubyte tdd",
+  "main": "tdd.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Him104/tdd.git"
+  },
+  "keywords": [
+    "tdd",
+    "string",
+    "calculator"
+  ],
+  "author": "Himanshu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Him104/tdd/issues"
+  },
+  "homepage": "https://github.com/Him104/tdd#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
