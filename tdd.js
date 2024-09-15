@@ -9,11 +9,16 @@ function add(nums) {
   }
 
   
-  const cleanedNumbers = nums.replace(/\n/g, ",");
-  const numArr = cleanedNumbers.split(delimiter);
+  const cleanedNumbers = nums.replace(/\n/g, delimiter);
+  const numArr = cleanedNumbers.split(delimiter).map(num => parseInt(num))
+
+  const negatives = numArr.filter(num => num < 0);
+  if (negatives.length) {
+    throw new Error(`negative numbers not allowed: ${negatives.join(",")}`);
+  }
 
 
-return numArr.reduce((acc,num)=> acc + parseInt(num),0)
+return numArr.reduce((acc,num)=> acc + num,0)
 }
 
 module.exports = add;
